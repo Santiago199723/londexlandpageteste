@@ -35,7 +35,6 @@
             padding-top: 19.225%; /* Ajuste a altura de acordo com a proporção 16:9 */
             background-color: #333; /* Cor de fundo do vídeo */
             max-width: 90%; /* Garante que o vídeo não ultrapasse 90% da largura da tela */
-
         }
 
         .video-container video {
@@ -47,30 +46,245 @@
             border: none;
         }
 
+        /* Estilos do botão */
+        .btn {
+            position: absolute;
+            top: 12.18%;  /* Ajuste a posição do botão sobre a imagem */
+            left: 24%;
+            transform: translateX(-50%);
+            background-color: #179f21;
+            color: rgb(224, 223, 223);
+            padding: 15px 39px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Efeito de pulsar suave */
+        .btn:hover {
+            background-color: #207524; /* Cor ao passar o mouse */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para destacar o botão */
+        }
+
+        /* Efeito de clique */
+        .btn:active {
+            background-color: #0f7914; /* Cor ao clicar */
+            box-shadow: none; /* Remove a sombra ao clicar */
+        }
+
         /* Media queries para responsividade */
         @media (max-width: 768px) {
-            .video-container {
-                height: auto;
-                width: 38%; /* Ajusta a largura do vídeo para telas médias */
-                padding-top: 20%; /* Mantém a proporção 16:9 */
-                left: 43%;
-                top: 21.7%; /* Ajusta a posição do vídeo em relação à imagem */
+            .btn {
+                font-size: 10px;
+                padding: 7px 8px;
+                left: 28%;
+            }
+        }
 
+        @media (max-width: 480px) {
+            .btn {
+                font-size: 5px;
+                padding: 4px 4px;
+                left: 24%;
+                top: 12.18%;  /* Ajuste a posição do botão sobre a imagem */
+            }
+        }
+
+        /* Posicionando o novo botão sobre a imagem 3 */
+        .btn-imagem3 {
+            position: absolute;
+            top: 29.4%;  /* Ajuste a posição vertical sobre a imagem 3 */
+            left: 41.5%;
+            transform: translateX(-50%);
+            background-color: #179f21;
+            color: rgb(224, 223, 223);
+            padding: 15px 39.9px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Efeito de pulsar suave para o novo botão */
+        .btn-imagem3:hover {
+            background-color: #1e7f23; /* Cor ao passar o mouse */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para destacar o botão */
+        }
+
+        /* Efeito de clique para o novo botão */
+        .btn-imagem3:active {
+            background-color: #0f7914; /* Cor ao clicar */
+            box-shadow: none; /* Remove a sombra ao clicar */
+        }
+
+        /* Media queries para responsividade */
+        @media (max-width: 768px) {
+            .btn-imagem3 {
+                font-size: 7px;
+                padding: 4px 4px;
+                left: 41%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .btn-imagem3 {
+                font-size: 7px;
+                padding: 4px 4px;
+                left: 41%;
+            }
+        }
+
+        /* Posicionando o novo botão sobre a imagem 4 */
+        .btn-imagem4 {
+            position: absolute;
+            top: 48.28%;  /* Ajuste a posição vertical sobre a imagem 4 */
+            left: 62.5%;
+            transform: translateX(-50%);
+            background-color: #179f21;
+            color: rgb(224, 223, 223);
+            padding: 16px 29.9px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 15px;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Efeito de pulsar suave para o novo botão */
+        .btn-imagem4:hover {
+            background-color: #1e7f23; /* Cor ao passar o mouse */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para destacar o botão */
+        }
+
+        /* Efeito de clique para o novo botão */
+        .btn-imagem4:active {
+            background-color: #0f7914; /* Cor ao clicar */
+            box-shadow: none; /* Remove a sombra ao clicar */
+        }
+
+        /* Media queries para responsividade */
+        @media (max-width: 768px) {
+            .btn-imagem4 {
+                font-size: 7px;
+                padding: 4px 3.9px;
+                left: 41%;
+                top: 48.18%;  /* Ajuste a posição do botão sobre a imagem */
 
             }
         }
 
         @media (max-width: 480px) {
-            .video-container {
-                height: auto;
-                width: 38%; /* Ajuste extra para telas pequenas */
-                padding-top: 20%; /* Mantém a proporção 16:9 */
-                left: 43%;
-                top: 21,7%; /* Ajusta a posição do vídeo em relação à imagem */
-
-
+            .btn-imagem4 {
+                font-size: 5px;
+                padding: 4px 3.95px;
+                left: 62.4%;
+                top: 48.25%
             }
         }
+
+        /* Posicionando o novo botão sobre a imagem 5 */
+        .btn-imagem5 {
+            position: absolute;
+            top: 80.15%;  /* Ajuste a posição vertical sobre a imagem 5 */
+            left: 78.6%;
+            transform: translateX(-50%);
+            background-color: #179f21;
+            color: rgb(224, 223, 223);
+            padding: 17px 38.5px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 13.5px;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Efeito de pulsar suave para o novo botão */
+        .btn-imagem5:hover {
+            background-color: #1e7f23; /* Cor ao passar o mouse */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para destacar o botão */
+        }
+
+        /* Efeito de clique para o novo botão */
+        .btn-imagem5:active {
+            background-color: #0f7914; /* Cor ao clicar */
+            box-shadow: none; /* Remove a sombra ao clicar */
+        }
+
+        /* Media queries para responsividade */
+        @media (max-width: 768px) {
+            .btn-imagem5 {
+                font-size: 10px;
+                padding: 7px 8px;
+                left: 41%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .btn-imagem5 {
+                font-size: 4px;
+                padding: 5px 6px;
+                left: 77.9%;
+            }
+        }
+
+        /* Novo botão sobre a imagem 5, mais à esquerda */
+        .btn-imagem5-reposicionado {
+            position: absolute;
+            top: 82.71%;  /* Mantém a posição vertical sobre a imagem 5 */
+            left: 27.4%;    /* Ajusta a posição horizontal mais à esquerda */
+            transform: translateX(-50%);
+            background-color: #179f21;
+            color: rgb(224, 223, 223);
+            padding: 15.8px 33.999px;   /* Ajuste o padding conforme necessário */
+            text-align: center;
+            text-decoration: none;
+            font-size: 13px;   /* Ajuste o tamanho da fonte conforme necessário */
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Efeito de pulsar suave para o novo botão */
+        .btn-imagem5-reposicionado:hover {
+            background-color: #1e7f23; /* Cor ao passar o mouse */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para destacar o botão */
+        }
+
+        /* Efeito de clique para o novo botão */
+        .btn-imagem5-reposicionado:active {
+            background-color: #0f7914; /* Cor ao clicar */
+            box-shadow: none; /* Remove a sombra ao clicar */
+        }
+
+        /* Media queries para responsividade */
+        @media (max-width: 768px) {
+            .btn-imagem5-reposicionado {
+                font-size: 12px;   /* Ajuste o tamanho da fonte */
+                padding: 10px 20px;  /* Ajuste o padding */
+                left: 63%;         /* Ajuste a posição horizontal */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .btn-imagem5-reposicionado {
+                font-size: 4px;    /* Ajuste o tamanho da fonte */
+                padding: 4.8px 11px;  /* Ajuste o padding */
+                left: 27%;         /* Ajuste a posição horizontal */
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -82,10 +296,12 @@
             <area shape="rect" coords="200,550,600,650" href="https://www.seusite.com" alt="Botão" target="_blank">
         </map>
 
-        <!-- Espaço para vídeo -->
+        <!-- Botão sobre a imagem 1 -->
+        <a href="https://www.seusite.com" class="btn">QUERO ME INSCREVER AGORA</a>
+
         <div class="video-container">
-            <!-- Vídeo local -->
-            <video controls>
+            <!-- Vídeo com imagem de capa -->
+            <video controls poster="LODNEX.jpg">
                 <source src="video.mp4" type="video/mp4">
                 Seu navegador não suporta o formato de vídeo.
             </video>
@@ -93,30 +309,28 @@
 
         <!-- Outras imagens do seu layout -->
         <img src="imagem 2.png" alt="Imagem 2">
+        
+        <!-- Imagem 3 com botão sobre ela -->
         <img src="imagem 3.png" alt="Imagem 3">
+        <!-- Botão sobre a imagem 3 -->
+        <a href="https://www.outrosite.com" class="btn-imagem3">QUERO ME INSCREVER AGORA</a>
+
+        <!-- Imagem 4 com botão sobre ela -->
         <img src="imagem 4.png" alt="Imagem 4">
+        <!-- Botão sobre a imagem 4 -->
+        <a href="https://www.novosite.com" class="btn-imagem4">QUERO ME INSCREVER AGORA</a>
+
+        <!-- Imagem 5 com botão sobre ela -->
         <img src="imagem 5.png" alt="Imagem 5">
+        <!-- Botão sobre a imagem 5 -->
+        <a href="https://www.quintosite.com" class="btn-imagem5">QUERO ME INSCREVER AGORA</a>
+
+        <!-- Novo botão sobre a imagem 5 (reposicionado) -->
+        <a href="https://www.quintosite.com" class="btn-imagem5-reposicionado">QUERO ME INSCREVER AGORA</a>
+
         <img src="imagem 6.png" alt="Imagem 6">
         <img src="imagem 7.png" alt="Imagem 7">
     </div>
 
-    <script>
-        function ajustarCoordenadas() {
-            var imagem1 = document.getElementById('imagem1');
-            var map = document.getElementById('imagem1-map');
-            var areas = map.getElementsByTagName('area');
-            var larguraImagem = imagem1.width;
-            var alturaImagem = imagem1.height;
-
-            // Atualize as coordenadas com base no tamanho da imagem
-            var area = areas[0]; // Pegando a primeira área
-            var coords = '20,' + (alturaImagem * 0.65) + ',' + (larguraImagem * 0.6) + ',' + (alturaImagem * 0.75); // Proporções para ajuste
-            area.setAttribute('coords', coords);
-        }
-
-        // Chamando a função para ajustar as coordenadas após o carregamento
-        window.onload = ajustarCoordenadas;
-        window.onresize = ajustarCoordenados; // Recalcular quando a tela for redimensionada
-    </script>
 </body>
 </html>
