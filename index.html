@@ -17,6 +17,8 @@
             display: flex;
             flex-direction: column;
             position: relative;
+            overflow-x: hidden;  /* Evita que o conteúdo ultrapasse a tela */
+
         }
 
         .container img {
@@ -209,10 +211,10 @@
 
         @media (max-width: 480px) {
             .btn-imagem4 {
-                font-size: 4px;
-                padding: 4px 6.4px;
-                left: 54%;
-                top: 48.25%
+                font-size: 4.5px;
+                padding: 4px 7.5px;
+                left: 53%;
+                top: 48.3%
             }
         }
 
@@ -261,7 +263,7 @@
             .btn-imagem5 {
                 font-size: 3.6px;
                 padding: 5px 5px;
-                left: 70.9%;
+                left: 70.95%;
             }
         }
 
@@ -363,5 +365,36 @@
         <img src="imagem 7.png" alt="Imagem 7">
     </div>
 
+
+    <script>
+        // Função para ajustar o layout com base na largura da tela
+        function ajustarLayout() {
+            const larguraTela = window.innerWidth;
+            const imagem = document.querySelector('.image');
+            const botao = document.querySelector('.btn');
+
+            // Ajuste da largura da imagem com base na largura da tela
+            if (larguraTela < 480) {
+                imagem.style.width = '100%';  // Imagem ocupa 100% da tela em telas pequenas
+            } else if (larguraTela < 768) {
+                imagem.style.width = '80%';  // Ajusta imagem para 80% em telas médias
+            } else {
+                imagem.style.width = '50%';  // Para telas grandes, a imagem tem largura de 50%
+            }
+
+            // Ajuste do botão
+            if (larguraTela < 768) {
+                botao.style.padding = '12px 25px'; // Botão maior em telas menores
+            } else {
+                botao.style.padding = '10px 20px'; // Botão normal em telas grandes
+            }
+        }
+
+        // Chama a função no carregamento da página
+        ajustarLayout();
+
+        // Reajusta o layout quando a janela for redimensionada
+        window.addEventListener('resize', ajustarLayout);
+    </script>
 </body>
 </html>
