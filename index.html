@@ -2,8 +2,9 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Landing Page</title>
+    <title>Indicador Londex</title>
     <style>
         body {
             margin: 0;
@@ -49,20 +50,22 @@
         /* Estilos do botão */
         .btn {
             position: absolute;
-            top: 12.18%;  /* Ajuste a posição do botão sobre a imagem */
-            left: 24%;
+            top: 12.19%;  /* Ajuste a posição do botão sobre a imagem */
+            left: 14%;
             transform: translateX(-50%);
-            background-color: #179f21;
+            background: linear-gradient(45deg, #1aad24, #0d5e91); /* Gradiente verde com azul */
             color: rgb(224, 223, 223);
-            padding: 15px 39px;
+            padding: 16px 35px;
             text-align: center;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 16px;
             border-radius: 25px;
             border: none;
             cursor: pointer;
+            font-family: 'Poppins', sans-serif;  /* Fonte estilosa aplicada aqui */
+            font-weight: 600;  /* Peso da fonte */
             transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-        }
+            animation: pulse 2s infinite;  /* Animação para o efeito de pulsação */        }
 
         /* Efeito de pulsar suave */
         .btn:hover {
@@ -75,6 +78,20 @@
             background-color: #0f7914; /* Cor ao clicar */
             box-shadow: none; /* Remove a sombra ao clicar */
         }
+
+                /* Animação de pulsação */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1); /* Aumenta o tamanho do botão no meio da animação */
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
 
         /* Media queries para responsividade */
         @media (max-width: 768px) {
@@ -89,7 +106,7 @@
             .btn {
                 font-size: 5px;
                 padding: 4px 4px;
-                left: 24%;
+                left: 14%;
                 top: 12.18%;  /* Ajuste a posição do botão sobre a imagem */
             }
         }
@@ -98,18 +115,21 @@
         .btn-imagem3 {
             position: absolute;
             top: 29.4%;  /* Ajuste a posição vertical sobre a imagem 3 */
-            left: 41.5%;
+            left: 33%;
             transform: translateX(-50%);
-            background-color: #179f21;
+            background: linear-gradient(45deg, #1aad24, #0d5e91); /* Gradiente verde com azul */
             color: rgb(224, 223, 223);
             padding: 15px 39.9px;
             text-align: center;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 15px;
             border-radius: 25px;
             border: none;
             cursor: pointer;
+            font-family: 'Poppins', sans-serif;  /* Fonte estilosa aplicada aqui */
+            font-weight: 600;  /* Peso da fonte */
             transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+            animation: pulse 2s infinite;  /* Animação para o efeito de pulsação */        
         }
 
         /* Efeito de pulsar suave para o novo botão */
@@ -135,28 +155,33 @@
 
         @media (max-width: 480px) {
             .btn-imagem3 {
-                font-size: 7px;
+                font-size: 5px;
                 padding: 4px 4px;
-                left: 41%;
+                left: 32%;
             }
         }
+                  /* Animação de pulsação */
+        
 
         /* Posicionando o novo botão sobre a imagem 4 */
         .btn-imagem4 {
             position: absolute;
             top: 48.28%;  /* Ajuste a posição vertical sobre a imagem 4 */
-            left: 62.5%;
+            left: 53.6%;
             transform: translateX(-50%);
-            background-color: #179f21;
+            background: linear-gradient(45deg, #1aad24, #0d5e91); /* Gradiente verde com azul */
             color: rgb(224, 223, 223);
-            padding: 16px 29.9px;
+            padding: 16px 32px;
             text-align: center;
             text-decoration: none;
-            font-size: 15px;
+            font-size: 14px;
             border-radius: 25px;
             border: none;
             cursor: pointer;
+            font-family: 'Poppins', sans-serif;  /* Fonte estilosa aplicada aqui */
+            font-weight: 600;  /* Peso da fonte */
             transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+            animation: pulse 2s infinite;  /* Animação para o efeito de pulsação */       
         }
 
         /* Efeito de pulsar suave para o novo botão */
@@ -184,9 +209,9 @@
 
         @media (max-width: 480px) {
             .btn-imagem4 {
-                font-size: 5px;
-                padding: 4px 3.95px;
-                left: 62.4%;
+                font-size: 4px;
+                padding: 4px 6.4px;
+                left: 54%;
                 top: 48.25%
             }
         }
@@ -195,19 +220,21 @@
         .btn-imagem5 {
             position: absolute;
             top: 80.15%;  /* Ajuste a posição vertical sobre a imagem 5 */
-            left: 78.6%;
+            left: 69%;
             transform: translateX(-50%);
-            background-color: #179f21;
+            background: linear-gradient(45deg, #1aad24, #0d5e91); /* Gradiente verde com azul */
             color: rgb(224, 223, 223);
-            padding: 17px 38.5px;
+            padding: 17px 38px;
             text-align: center;
             text-decoration: none;
-            font-size: 13.5px;
+            font-size: 13px;
             border-radius: 25px;
             border: none;
             cursor: pointer;
+            font-family: 'Poppins', sans-serif;  /* Fonte estilosa aplicada aqui */
+            font-weight: 600;  /* Peso da fonte */
             transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-        }
+            animation: pulse 2s infinite;  /* Animação para o efeito de pulsação */               }
 
         /* Efeito de pulsar suave para o novo botão */
         .btn-imagem5:hover {
@@ -232,28 +259,32 @@
 
         @media (max-width: 480px) {
             .btn-imagem5 {
-                font-size: 4px;
-                padding: 5px 6px;
-                left: 77.9%;
+                font-size: 3.6px;
+                padding: 5px 5px;
+                left: 70.9%;
             }
         }
 
         /* Novo botão sobre a imagem 5, mais à esquerda */
         .btn-imagem5-reposicionado {
             position: absolute;
-            top: 82.71%;  /* Mantém a posição vertical sobre a imagem 5 */
-            left: 27.4%;    /* Ajusta a posição horizontal mais à esquerda */
+            top: 82.69%;  /* Mantém a posição vertical sobre a imagem 5 */
+            left: 18.57%;    /* Ajusta a posição horizontal mais à esquerda */
             transform: translateX(-50%);
-            background-color: #179f21;
+            background: linear-gradient(45deg, #1aad24, #0d5e91); /* Gradiente verde com azul */
             color: rgb(224, 223, 223);
-            padding: 15.8px 33.999px;   /* Ajuste o padding conforme necessário */
+            padding: 15.8px 35px;   /* Ajuste o padding conforme necessário */
             text-align: center;
             text-decoration: none;
-            font-size: 13px;   /* Ajuste o tamanho da fonte conforme necessário */
+            font-size: 13.5px;   /* Ajuste o tamanho da fonte conforme necessário */
             border-radius: 25px;
             border: none;
             cursor: pointer;
+            font-family: 'Poppins', sans-serif;  /* Fonte estilosa aplicada aqui */
+            font-weight: 600;  /* Peso da fonte */
             transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+            animation: pulse 2s infinite;  /* Animação para o efeito de pulsação */               
+
         }
 
         /* Efeito de pulsar suave para o novo botão */
@@ -280,8 +311,8 @@
         @media (max-width: 480px) {
             .btn-imagem5-reposicionado {
                 font-size: 4px;    /* Ajuste o tamanho da fonte */
-                padding: 4.8px 11px;  /* Ajuste o padding */
-                left: 27%;         /* Ajuste a posição horizontal */
+                padding: 4.8px 10px;  /* Ajuste o padding */
+                left: 18%;         /* Ajuste a posição horizontal */
             }
         }
 
@@ -293,11 +324,11 @@
         <!-- Imagem com área clicável -->
         <img src="imagem 1.png" alt="Imagem 1" id="imagem1" usemap="#imagem1-map">
         <map name="imagem1-map" id="imagem1-map">
-            <area shape="rect" coords="200,550,600,650" href="https://www.seusite.com" alt="Botão" target="_blank">
+            <area shape="rect" coords="200,550,600,650" href="https://checkout.dignopay.com/checkout/cm8njqh1500b910szbrv7h1o5?offer=1VLRNCK" alt="Botão" target="_blank">
         </map>
 
         <!-- Botão sobre a imagem 1 -->
-        <a href="https://www.seusite.com" class="btn">QUERO ME INSCREVER AGORA</a>
+        <a href="https://checkout.dignopay.com/checkout/cm8njqh1500b910szbrv7h1o5?offer=1VLRNCK" class="btn">QUERO ME INSCREVER AGORA</a>
 
         <div class="video-container">
             <!-- Vídeo com imagem de capa -->
@@ -313,20 +344,20 @@
         <!-- Imagem 3 com botão sobre ela -->
         <img src="imagem 3.png" alt="Imagem 3">
         <!-- Botão sobre a imagem 3 -->
-        <a href="https://www.outrosite.com" class="btn-imagem3">QUERO ME INSCREVER AGORA</a>
+        <a href="https://checkout.dignopay.com/checkout/cm8njqh1500b910szbrv7h1o5?offer=1VLRNCK" class="btn-imagem3">QUERO ME INSCREVER AGORA</a>
 
         <!-- Imagem 4 com botão sobre ela -->
         <img src="imagem 4.png" alt="Imagem 4">
         <!-- Botão sobre a imagem 4 -->
-        <a href="https://www.novosite.com" class="btn-imagem4">QUERO ME INSCREVER AGORA</a>
+        <a href="https://checkout.dignopay.com/checkout/cm8njqh1500b910szbrv7h1o5?offer=1VLRNCK" class="btn-imagem4">QUERO ME INSCREVER AGORA</a>
 
         <!-- Imagem 5 com botão sobre ela -->
         <img src="imagem 5.png" alt="Imagem 5">
         <!-- Botão sobre a imagem 5 -->
-        <a href="https://www.quintosite.com" class="btn-imagem5">QUERO ME INSCREVER AGORA</a>
+        <a href="https://checkout.dignopay.com/checkout/cm8njqh1500b910szbrv7h1o5?offer=1VLRNCK" class="btn-imagem5">QUERO ME INSCREVER AGORA</a>
 
         <!-- Novo botão sobre a imagem 5 (reposicionado) -->
-        <a href="https://www.quintosite.com" class="btn-imagem5-reposicionado">QUERO ME INSCREVER AGORA</a>
+        <a href="https://checkout.dignopay.com/checkout/cm8njqh1500b910szbrv7h1o5?offer=1VLRNCK" class="btn-imagem5-reposicionado">QUERO ME INSCREVER AGORA</a>
 
         <img src="imagem 6.png" alt="Imagem 6">
         <img src="imagem 7.png" alt="Imagem 7">
